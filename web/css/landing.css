@@ -1,0 +1,1012 @@
+/******************************* Fonts ***************************/
+
+@font-face {
+    font-family:'CharlesModern-Regular';
+    src: url('../fonts/CharlesModern/eot/CharlesModern-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CharlesModern/ttf/CharlesModern-Regular.ttf') format('truetype'),
+        url('../fonts/CharlesModern/woff/CharlesModern-Regular.woff') format('woff'),
+        url('../fonts/CharlesModern/svg/CharlesModern-Regular.svg#CharlesModern-Regular') format('svg');
+}
+
+@font-face {
+    font-family:'CharlesModern-Bold;
+    src: url('../fonts/CharlesModern/eot/CharlesModern-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CharlesModern/ttf/CharlesModern-Bold.ttf') format('truetype'),
+        url('../fonts/CharlesModern/woff/CharlesModern-Bold.woff') format('woff'),
+        url('../fonts/CharlesModern/svg/CharlesModern-Bold.svg#CharlesModern-Bold') format('svg');
+}
+
+@font-face {
+    font-family:'CharlesModern-Light;
+    src: url('../fonts/CharlesModern/eot/CharlesModern-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CharlesModern/ttf/CharlesModern-Light.ttf') format('truetype'),
+        url('../fonts/CharlesModern/woff/CharlesModern-Light.woff') format('woff'),
+        url('../fonts/CharlesModern/svg/CharlesModern-Light.svg#CharlesModern-Light') format('svg');
+}
+
+/*--------- GENERIC STYLES ----------*/
+
+body{
+    /*font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;*/
+    background: #ffffff;
+}
+
+.black-bg{
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 30%, #000000 31%, #000000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(30%,#ffffff), color-stop(31%,#000000), color-stop(100%,#000000));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 30%,#000000 31%,#000000 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 30%,#000000 31%,#000000 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 30%,#000000 31%,#000000 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 30%,#000000 31%,#000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+}
+
+.generic__container{
+    max-width: 974px;
+    min-width: 280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*--------- BIG HEADER --------*/
+.big__header{
+    min-height: 792px;
+    background-image: url(../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.global__header__logo{
+    height: 114px;
+    text-indent: -99999px;
+    background-image: url(../images/schwab-logo.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: left top;
+    width:115px;
+    float:left;
+    margin-right:10px;
+    cursor:pointer;
+}
+
+.global__header__logo__portfolio{
+    height: 114px;
+    text-indent: -99999px;
+    background-image: url(../images/inteligent-portfolio-logo.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: left top;
+    width:115px;
+    float:left;
+}
+
+.global__header__title{
+    padding: 53px 0 0 0;
+    color: #435e79;
+    font-size: 31px;
+    font-weight: 400;
+    font-family:'Charles-Modern-Light', Arial, sans-serif;
+    float:left;
+    width:100%;
+}
+
+.global__header__title__bold{
+    display: block;
+}
+
+.global__header__title__bold b{
+    color: #037dae;
+    font-family:'Charles-Modern-Bold', Arial, sans-serif;
+}
+
+.global__header__title__bold sup{
+    font-size: 13px;
+    line-height: 10px;
+}
+
+.global__header__text{
+    color: #212c3a;
+    font-size: 20px;
+    font-weight: 400;
+    /*overflow: hidden;*/
+    float: left;
+    font-family:'Charles-Modern-Light', Arial, sans-serif;
+}
+
+.global__header__cta-holder{
+    display: block;
+    text-align: right;
+    margin-right: 0px;
+}
+
+.global__header__cta{
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 14px;
+    width: 120px;
+    line-height: 26px;
+    height: 25px;
+    color: #fff;
+    background: #ec883b;
+    position: relative;
+    border-radius: 20px;
+    font-weight: 400;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 14px;
+    transition: background 0.3s;
+}
+
+.global__header__cta:hover,
+.quest__cta:hover{
+    background: #bd611a;
+}
+
+.global__header__cta:after{
+    content:'';
+    display: block;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    position: absolute;
+    text-align: center;
+    right: 5px;
+    top: 50%;
+    margin-top: -8.5px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background: url(../images/cta-arrow.gif) center no-repeat;
+}
+
+/* --------- header tiles -------- */
+
+.global__header__tiles-holder{
+    overflow: hidden;
+    padding-top: 54px;
+    clear: both;
+}
+
+.global__header__tile,
+.global__header__tile__title span{
+    width: 286px;
+    height: 286px;
+}
+
+.global__header__tile__title,
+.global__header__tile__text{
+    width: 100%;
+    height: 100%;
+}
+
+.global__header__tile{
+    float: left;
+    overflow: hidden;
+}
+
+.global__header__tile__title{
+    background-color: rgba(3,125,174,0.7);
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    transition: margin-top 0.4s ease-out;
+    font-family:'Charles-Modern-Light', Arial, sans-serif;
+}
+
+.global__header__tile:hover .global__header__tile__title,
+.global__header__tile.active .global__header__tile__title{
+    margin-top: -286px;
+}
+
+.global__header__tile:nth-child(2){
+    margin: 0 58px;
+}
+
+.global__header__tile__title span{
+    box-sizing: border-box;
+    padding: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.global__header__tile__text{
+    box-sizing: border-box;
+    background: rgba(255,255,255,0.9);
+    color: #435e79;
+    font-size: 18px;
+    padding: 55px 24px 0;
+    line-height: 24px;
+    font-family:'Charles-Modern-Regular', Arial, sans-serif;
+}
+
+.global__header__legal{
+    font-size: 10px;
+    color: #fff;
+    margin-top: 29px;
+    display: inline-block;
+    text-shadow: -3px 2px 3px rgba(150, 150, 150, 1);
+}
+
+.global__header__legal__link{
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family:'Charles-Modern-Regular', Arial, sans-serif;
+}
+
+/*.global__header__legal:hover + .global__header__legal__text{
+    opacity: 1;
+}*/
+
+/*.global__header__legal__text .active{
+    opacity:1;
+}*/
+
+.global__header__legal__text{
+    display: block;
+    opacity: 0;
+    font-size: 10px;
+    color: #fff;
+    margin-top: 6px;
+    line-height: 12px;
+    padding: 17px 25px;
+    background-color: #037dae;
+    transition: opacity 0.2s ease-out;
+    font-family:'Charles-Modern-Regular', Arial, sans-serif;
+}
+
+/* ------------- Main info container ------------ */
+.main__info__container{
+    padding: 44px 0 0 0;
+}
+
+.main__info__title{
+    color: #037dae;
+    font-size: 30px;
+    font-family:'Charles-Modern-Regular', Arial, sans-serif;
+}
+
+.main__info__subtitle{
+    color: #435e79;
+    font-size: 20px;
+    margin-top: 2px;
+    font-family:'Charles-Modern-Light', Arial, sans-serif;
+}
+
+.main__info__list{
+    padding: 25px 0 2px 0;
+}
+
+.main__info__item{
+    background-color: #d2d8e0;
+    overflow: hidden;
+    position: relative;
+    padding-left: 200px;
+    color: #435e79;
+    margin-bottom: 20px;
+}
+
+.main__info__number{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -35px;
+    width: 200px;
+    height: 70px;
+    line-height: 83px;
+    text-align: center;
+    font-size: 82px;
+    font-family:'Charles-Modern-Regular', Arial, sans-serif;
+}
+
+.main__info__text{
+    padding: 27px 30px 21px 0;
+    font-size: 18px;
+    line-height: 24px;
+    display: block;
+    font-family:'Charles-Modern-Regular', Arial, sans-serif;
+}
+
+.main__info__text sup{
+    font-size: 7px;
+    line-height: 5px;
+}
+
+.main__info__legal{
+    font-size: 10px;
+    color: #435e79;
+    padding-bottom: 30px;
+    font-family:Helvetica, Arial, sans-serif;
+    font-weight:lighter;
+}
+
+.main__info__legal a{
+    color: #435e79;
+    text-decoration: underline;
+}
+
+.main__info__legal a:hover{
+    text-decoration: none;
+}
+
+/* ---------- Price header ---------- */
+.price__info__header{
+    padding: 0 205px 0 103px;
+    margin-bottom: 20px;
+    min-height: 75px;
+    position: relative;
+}
+
+.price__info__header:after{
+    content: '';
+    display: block;
+    width: 72px;
+    height: 75px;
+    position: absolute;
+    top: 50%;
+    right: 102px;
+    margin-top: -37.5px;
+    background: url(../images/award-icon.jpg) center;
+}
+
+.price__info__title{
+    padding-top: 11px;
+    font-size: 24px;
+    color: #435e79;
+    font-family:'Charles-Modern-Regular', Arial, sans-serif;
+}
+
+.price__info__title b{
+    font-family:'Charles-Modern-Bold', Arial, sans-serif;
+}
+
+/* ---------- Questionnarie section ---------- */
+
+.quest__container{
+    height: 686px;
+    background-image: url(../images/quest-bg.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.quest__header{
+    float: right;
+    padding-top: 65px;
+}
+
+.quest__title{
+    color: #037dae;
+    font-size: 30px;
+    padding-right: 22px;
+    font-family:'Charles-Modern-Regular', Arial, sans-serif;
+}
+
+.quest__text{
+    color: #212c3a;
+    font-size: 20px;
+    font-family:'Charles-Modern-Light', Arial, sans-serif;
+}
+
+.quest__cta{
+    display: block;
+    float: right;
+    clear: both;
+    text-align: left;
+    font-size: 14px;
+    line-height: 29px;
+    height: 28px;
+    color: #fff;
+    margin-top: 8px;
+    background: #ec883b;
+    border-radius: 20px;
+    font-weight: 400;
+    padding: 0 20px;
+    transition: background 0.3s;
+    font-family:'Charles-Modern-Regular', Arial, sans-serif;
+}
+
+/* ------------ Global Footer ---------- */
+.global__footer__container{
+    background: #000;
+}
+
+.global__footer__nav{
+    background-color: #037dae;
+    text-align: center;
+    font-family:'Charles-Modern-Regular', Arial, sans-serif;
+}
+
+.global__footer__item{
+    display: inline-block;
+    padding: 0 12px;
+    height: 41px;
+}
+
+.global__footer__link{
+    display: block;
+    line-height: 43px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.global__footer__link:hover{
+    text-decoration: underline;
+}
+
+.global__footer__info a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.privacy__footer__nav{
+    color: #fff;
+    font-size: 10px;
+    line-height: 14px;
+    padding-top:0;
+    padding-bottom:0;
+}
+
+.privacy__footer__nav .global__footer__item{
+    height:auto;
+    padding-left:0;
+}
+
+.privacy__footer__nav .global__footer__link{
+    color: #fff;
+    font-size: 10px;
+    line-height: 14px;
+    padding-top:0;
+}
+
+.global__footer__info a:hover{
+    text-decoration: none;
+}
+
+.global__footer__info{
+    color: #fff;
+    font-size: 10px;
+    padding: 50px 0;
+    font-family:Helvetica, Arial, sans-serif;
+    font-weight:lighter;
+}
+
+.global__footer__info p{
+    padding-bottom: 14px;
+    line-height: 14px;
+}
+
+.global__footer__info .box{
+    font-size: 14px;
+    font-family:Helvetica, Arial, sans-serif;
+    font-weight:bold;
+    border: 1px solid #ffffff;
+    text-align: center;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    margin-bottom: 14px;
+}
+
+.global__footer__info sup{
+    font-size: 4px;
+    line-height: 5px;
+}
+
+sup {
+    font-size: 60%;
+
+    /* Zero out the line-height so that it doesn't
+       interfere with the positioning that follows */
+    line-height: 0;
+
+    /* Where the magic happens: makes all browsers position
+       the sup/sup properly, relative to the surrounding text */
+    position: relative;
+
+    /* Note that if you're using Eric Meyer's reset.css, this
+       is already set and you can remove this rule */
+    vertical-align: baseline;
+    /* Move the superscripted text up */
+    top: -0.4em;
+}
+
+.main__info__text.third__info sup{
+     top: -1.1em;
+}
+
+@media screen and (min-width: 974px){
+    .big__header{
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+}
+
+@media screen and (max-width: 973px){
+    .generic__container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .global__header__tiles-holder{
+        text-align: center;
+    }
+
+    .global__header__tile,
+    .global__header__tile:nth-child(2){
+        display: block;
+        float: left;
+        text-align: left;
+        margin: 0 15px 30px;
+    }
+
+    .global__header__tile:nth-child(3){
+        float: none;
+        margin: 20px auto 0;
+    }
+
+    .quest__container{
+        background-image: url(../images/quest-bg-mobile.jpg);
+        background-size: 100% auto;
+        background-position: center;
+    }
+
+    .big__header{
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width:676px){
+    .big__header{
+        background-attachment: fixed;
+    }
+}
+
+/*Retina iPad in portrait & landscape*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+    .big__header{
+        background-attachment:local;
+    }
+
+   /* .global__header__legal__text{
+
+        opacity:0;
+
+        height: 0;
+        transition: all 0.5s;
+    }
+
+   .global__header__legal__text .active{
+        opacity: 1;
+        padding-bottom:17px;
+        padding-top:20px;
+        margin-top: 18px;
+        height: auto;
+}*/
+
+}
+
+@media only screen and (max-device-width : 1024px){
+    .big__header{
+        background-attachment:local;
+    }
+     .global__header__tile:nth-child(2){
+         margin-left:55px;
+         margin-right:55px;
+     }
+}
+
+
+@media screen and (max-width: 675px){
+    .mobile__breake{
+        display: block;
+    }
+
+    .global__header__logo{
+        width: 79px;
+        height: 78px;
+    }
+
+    .global__header__logo__portfolio{
+        width: 79px;
+        height: 78px;
+    }
+
+    .big__header{
+        background-image: url(../images/header-bg-mobile.jpg);
+        background-size: 100% auto;
+        background-position: center 169px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .global__header__cta-holder{
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .global__header__cta:after{
+        right: 9px;
+    }
+
+    .global__header__title{
+        padding-top: 26px;
+        line-height: 35px;
+    }
+
+    .global__header__tile:nth-child(2){
+        margin: 0 15px 30px;
+    }
+
+    .global__header__title__bold{
+        font-size: 30.2px;
+    }
+
+    .global__header__title__bold b{
+        font-weight: 400;
+    }
+
+    .global__header__legal__text{
+        margin: 17px -20px 0;
+        box-sizing: content-box;
+        font-size: 16px;
+        height: 0px;
+        line-height: 20px;
+        padding: 17px 45px 17px;
+        overflow: hidden;
+    }
+
+    .global__header__legal__text{
+        margin-top: 0;
+        opacity:0;
+        padding-bottom:0;
+        padding-top:0;
+        margin-top: 18px;
+        margin-bottom:0;
+       height: 0;
+       transition: all 0.5s;
+    }
+
+   .global__header__legal__text .active{
+    opacity: 1;
+    padding-bottom:17px;
+    padding-top:20px;
+    margin-top: 18px;
+    height: auto;
+}
+
+    .global__header__text{
+        margin: 9px 0 0 0;
+        font-size: 21.8px;
+    }
+
+    .global__header__cta{
+        margin-top: 5px;
+    }
+
+    .global__header__legal{
+        margin-top: 0;
+        font-size: 16.5px;
+    }
+
+    /* ------------ Tiles ------------ */
+
+    .global__header__tiles-holder{
+        padding-top: 30px;
+    }
+
+    .global__header__tile,
+    .global__header__tile:nth-child(2){
+        display: inline-block;
+        text-align: left;
+        float: none;
+      /*  margin: 0 auto 25px;*/
+    }
+
+    .global__header__tile:last-child{
+        margin: 0 auto 22px;
+    }
+
+    .global__header__tile__title{
+        position: relative;
+    }
+
+    .global__header__tile__title:after{
+        content: '+';
+        display: block;
+        width: 38px;
+        line-height: 39px;
+        height: 38px;
+        border-radius: 50%;
+        background-color: #fff;
+        color: #037dae;
+        font-size: 45px;
+        position: absolute;
+        bottom: 27px;
+        right: 26px;
+        text-align: center;
+    }
+
+    .global__header__tile__title span{
+        padding: 75px;
+        line-height: 52px;
+    }
+
+    .global__header__tile__text{
+        padding-top: 85px;
+        line-height: 36px;
+    }
+
+    /* ------------ Main info ------------- */
+    .main__info__container{
+        padding-top: 46px;
+    }
+
+    .main__info__item{
+        padding-left: 160px;
+        margin-bottom: 30px;
+    }
+
+    .main__info__number{
+        width: 160px;
+        margin-left: -24px;
+    }
+
+    .main__info__title{
+        line-height: 36px;
+    }
+
+    .main__info__text{
+        font-size: 20px;
+        padding: 29px 30px 20px 0;
+        min-height: 217px;
+        box-sizing: border-box;
+    }
+
+    .main__info__subtitle{
+        margin-top: 8px;
+    }
+
+    .main__info__list{
+        padding: 24px 0 6px 0;
+    }
+
+    .global__header__tile__text{
+        font-size: 30px;
+    }
+
+    .main__info__legal{
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 44px;
+    }
+
+    /* ------------- Price info ------------*/
+
+    .price__info__header{
+        padding: 83px 0 0;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+    .price__info__header:after{
+        top: 0;
+        right: 50%;
+        margin:0 -35px 0 0;
+    }
+
+    .price__info__title{
+        font-size: 26px;
+        line-height: 28px;
+        padding-top: 13px;
+    }
+
+    /* ------------ Quest Header ----------- */
+    .quest__container{
+        height: 672px;
+        background-image: url(../images/quest-bg-mobile.jpg);
+        background-color: #d1c1b9;
+        background-position: center bottom;
+    }
+
+    .quest__header{
+        float: left;
+        padding-top: 45px;
+    }
+
+    .quest__title{
+        padding-right: 23px;
+    }
+
+    .quest__text{
+        margin-top: 8px;
+    }
+
+    .quest__cta{
+        margin-top: 14px;
+        padding: 0 28px 0 21px;
+        float:left;
+    }
+
+    /* ------------- Global Footer --------------*/
+    .global__footer__info{
+        padding-top: 47px;
+    }
+
+    .global__footer__info .box{
+        padding-left:14px;
+        padding-right:14px;
+    }
+    .global__footer__item,
+    .global__footer__link{
+        height: 30px;
+        display:block;
+    }
+
+    .global__footer__nav{
+        padding-top:24px;
+        padding-bottom:12px;
+    }
+
+    .global__footer__container a,
+    .global__footer__container p{
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 19px;
+    }
+
+    a.global__footer__link{
+        line-height: 18px;
+         padding-bottom: 12px;
+    }
+
+    .global__footer__container sup{
+        font-size: 7px;
+    }
+
+    .privacy__footer__nav{
+
+    }
+    .privacy__footer__nav li{
+        width:auto;
+        display:inline-block;
+        font-size:16px;
+    }
+    .privacy__footer__nav .global__footer__link{
+        font-size:16px;
+    }
+
+}
+
+
+@media screen and (min-width: 511px) and (max-width: 674px){
+
+    .global__header__tile,
+    .global__header__tile__title span{
+        width: 436px;
+        height: 436px;
+        margin-bottom: 25px;
+    }
+
+    .global__header__tile:hover .global__header__tile__title,
+    .global__header__tile.active .global__header__tile__title{
+        margin-top: -436px;
+    }
+
+    .global__header__tile__title{
+        font-size: 45px;
+    }
+
+    .price__info__title b{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 511px){
+    .height-off{
+        height: auto;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+
+    .big__header{
+        background-image: url(../images/header-bg-mobile.jpg);
+        background-size: 511px auto;
+        background-position: center 250px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .black-bg{
+        background: #ffffff;
+    }
+
+    /* ------------- main ifo content ------------- */
+
+    .main__info__item{
+        padding-left: 100px;
+    }
+
+    .main__info__number{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .main__info__item {
+        padding-left: 0;
+        padding-top: 78px;
+    }
+
+    .main__info__number {
+        margin-top: 0;
+        top: 20px;
+
+    }
+
+    .main__info__text {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    /* -------------- quest container -------------- */
+
+    .quest__header{
+        padding-top: 30px;
+    }
+
+    .quest__container{
+        height: 550px;
+    }
+
+    /* ---------- Tiles ---------- */
+
+    .global__header__tile__text {
+        padding-top: 40px;
+        line-height: 26px;
+        font-size: 20px;
+    }
+
+    .global__header__tile__title span {
+        padding: 35px;
+        line-height: 32px;
+    }
+
+    .global__header__legal__text {
+        padding-left:20px;
+        padding-right:20px;
+
+    }
+
+}
+
+@media screen and (min-width: 511px) and (max-width: 974px){
+    .global__header__tiles-holder{
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .global__header__tile:nth-child(1){
+        margin-left: 20px;
+    }
+
+    .global__header__tile:nth-child(2){
+        /*margin: 0 20px 0 0;
+        float: right;*/
+    }
+
+    .global__header__tile:nth-child(3){
+        margin: 0 auto;
+        clear: both;
+    }
+}
